@@ -38,4 +38,4 @@ client.on('message', message => {
     }
 });
 
-client.login('ODEyOTk3MTYwNDAzODYxNTA0.YDI4mw.AcItnKPwrW8LnnxvdvJdhegcRPw');
+client.login('');//Add your own make sure this is blank before commmiting
