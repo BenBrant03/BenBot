@@ -25,28 +25,19 @@ client.on('message', message => {
     const command = args.shift().toLowerCase();
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args);
-   }else if (command === 'youtube'){
+    }else if (command === 'youtube'){
         client.commands.get('youtube').execute(message, args);
     }else if (command === 'twitch'){
         client.commands.get('twitch').execute(message, args);
-<<<<<<< Updated upstream
-   // }else if (command === 'facebook'){
-       // client.commands.get('facebook').execute(message, args);
-   // }else if (command === 'instagram'){
-       // client.commands.get('instagram').execute(message, args);
-   // }else if (command === 'schedule'){
-       // client.commands.get('schedule').execute(message, args);
-=======
     }else if (command === 'facebook'){
         client.commands.get('facebook').execute(message, args);
     }else if (command === 'instagram'){
         client.commands.get('instagram').execute(message, args);
     }else if (command === 'schedule'){
         client.commands.get('schedule').execute(message, args);
-    }else if (command === 'twitter'){
+    }else if(command ==='twitter'){
         client.commands.get('twitter').execute(message, args);
->>>>>>> Stashed changes
     }
 });
 
-client.login('ODEyOTk3MTYwNDAzODYxNTA0.YDI4mw.57Ih7vgoyJs42ON9oGS_-YswpWQ');//Add your own make sure this is blank before commmiting
+client.login('');//Add your own make sure this is blank before commmiting
