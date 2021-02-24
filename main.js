@@ -29,12 +29,23 @@ client.on('message', message => {
         client.commands.get('youtube').execute(message, args);
     }else if (command === 'twitch'){
         client.commands.get('twitch').execute(message, args);
+<<<<<<< Updated upstream
    // }else if (command === 'facebook'){
        // client.commands.get('facebook').execute(message, args);
    // }else if (command === 'instagram'){
        // client.commands.get('instagram').execute(message, args);
    // }else if (command === 'schedule'){
        // client.commands.get('schedule').execute(message, args);
+=======
+    }else if (command === 'facebook'){
+        client.commands.get('facebook').execute(message, args);
+    }else if (command === 'instagram'){
+        client.commands.get('instagram').execute(message, args);
+    }else if (command === 'schedule'){
+        client.commands.get('schedule').execute(message, args);
+    }else if (command === 'twitter'){
+        client.commands.get('twitter').execute(message, args);
+>>>>>>> Stashed changes
     }
 });
 
