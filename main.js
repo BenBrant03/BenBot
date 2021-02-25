@@ -29,7 +29,6 @@ client.on('message', message => {
         client.commands.get('youtube').execute(message, args);
     }else if (command === 'twitch'){
         client.commands.get('twitch').execute(message, args);
-<<<<<<< HEAD
     }else if (command === 'facebook'){
         client.commands.get('facebook').execute(message, args);
     }else if (command === 'instagram'){
@@ -38,16 +37,8 @@ client.on('message', message => {
         client.commands.get('schedule').execute(message, args);
     }else if(command ==='twitter'){
         client.commands.get('twitter').execute(message, args);
-=======
-    //}else if (command === 'facebook'){
-       // client.commands.get('facebook').execute(message, args);
-   // }else if (command === 'instagram'){
-       // client.commands.get('instagram').execute(message, args);
-   // }else if (command === 'schedule'){
-       // client.commands.get('schedule').execute(message, args);
-  //  }else if (command === 'twitter'){
-       // client.commands.get('twitter').execute(message, args);
->>>>>>> 1a168c3c9904643994177311275289b4bb959a37
+    }else if(command === 'email'){
+        client.commands.get('email').execute(message, args)
     }
 });
 
