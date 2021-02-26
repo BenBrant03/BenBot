@@ -50,4 +50,4 @@ client.on('message', message => {
     }
 });
 
-client.login('');//Add your own make sure this is blank before commmiting
+client.login('ODEyOTk3MTYwNDAzODYxNTA0.YDI4mw.BKRnqfuGZ8uLXbVjM6Bs7q6lOLs');//Add your own make sure this is blank before commmiting
