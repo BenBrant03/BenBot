@@ -19,6 +19,14 @@ for(const file of commandFiles){
 client.once('ready', () => {
     console.log('BenBot Is Online!');
 });
+//client.on('guildMemberAdd', guildMember => {
+    //let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'Member');
+    //guildMember.roles.add(welcomeRole);
+    //console.log('New member given the member role');
+    //guildMember.guild.channels.cache.get(809550993506697226).send(`Welcome <@${guildMember.user.id}> to the LCFC Ben Server. Type !info to get all of the info on 
+    //on what goes on on this server. Enjoy and have a nice day`);
+    //console.log('Welcome message sent')
+//});
 client.on('message', message => {
     if(!message.content.startsWith(prefix) || message.author.bot) return;
     const args = message.content.slice(prefix.length).split(/ +/);
