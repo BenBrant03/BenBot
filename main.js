@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const prefix = '!';
+const prefix = '?';// Change before commit
 
 const fs = require('fs');
 
@@ -46,7 +46,9 @@ client.on('message', message => {
     }else if(command ==='twitter'){
         client.commands.get('twitter').execute(message, args);
     }else if(command === 'email'){
-        client.commands.get('email').execute(message, args)
+        client.commands.get('email').execute(message, args);
+    }else if(command === 'info'){
+        client.commands.get('info').execute(message, args);
     }
 });
 
