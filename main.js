@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const prefix = '?';// Change before commit
+const prefix = '!';// Change before commit
 
 const fs = require('fs');
 
@@ -50,8 +50,10 @@ client.on('message', message => {
     }else if(command === 'info'){
         client.commands.get('info').execute(message, args);
     }else if(command == 'test'){
-        client.command.get('test').execute(message, args)
+        client.commands.get('test').execute(message, args);
+    }else if(command == 'prediction'){
+        client.commands.get('prediction').execute(message, args);
     }
 });
 
-client.login('ODE1ODY5OTI2MDczODI3MzU5.YDysFA.C1zGYlQv-TQJdbZO8-J6LLugPto');//Add your own make sure this is blank before commmiting
+client.login('');//Add your own make sure this is blank before commmiting

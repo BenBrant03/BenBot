@@ -2,8 +2,7 @@ module.exports = {
     name: 'test',
     description: "Used to Test new features",
     execute(message, args){
-        var name = 'Ben'
-        message.channel.send('Hello ' + name);
-        
+        message.channel.send('Hi This is Ben Bot V 1.05')
+
     }
 }
