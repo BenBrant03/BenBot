@@ -49,7 +49,9 @@ client.on('message', message => {
         client.commands.get('email').execute(message, args);
     }else if(command === 'info'){
         client.commands.get('info').execute(message, args);
+    }else if(command == 'test'){
+        client.command.get('test').execute(message, args)
     }
 });
 
-client.login('ODE1ODY5OTI2MDczODI3MzU5.YDysFA.C1zGYlQv-TQJdbZO8-J6LLugPt');//Add your own make sure this is blank before commmiting
+client.login('ODE1ODY5OTI2MDczODI3MzU5.YDysFA.C1zGYlQv-TQJdbZO8-J6LLugPto');//Add your own make sure this is blank before commmiting
